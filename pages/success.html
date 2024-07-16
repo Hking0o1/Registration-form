@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            padding: 45px;
+            text-shadow: 2px 2px 5px blue;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        }
+        
+        .text-center {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        /* Container styles */
+        
+        .container {
+            background-color: rgba(3, 248, 19, 0.692);
+            max-width: 800px;
+            height: 40vh;
+            margin: 0 auto;
+            color: rgb(248, 244, 244);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s ease;
+            transform: translateY(0);
+            opacity: 1;
+        }
+        /* Header styles */
+        
+        .header {
+            text-align: center;
+            margin-top: 10%;
+
+        }
+        /* Title styles */
+        
+        #title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 600px) {
+            #title {
+                font-size: 2em;
+            }
+        }
+        
+        @media (min-width:840px) {
+            body {
+                padding: 15vw;
+            }
+            p {
+                font-size: 1.8vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">REGISTRATION SUCCESS</h1>
+        </header>
+        <h4 id='subtitle' class="text-center">your Form has been submited!</h4>
+
+    </div>
+</body>
+
+</html>

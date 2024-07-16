@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global styles */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            padding: 5vh;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            text-shadow: 2px 2px 5px blue;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        }
+        /* Container styles */
+        
+        .container {
+            align-items: center;
+            width: 70%;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        p {
+            text-align: center;
+        }
+        /* Header styles */
+        
+        .header {
+            text-align: center;
+        }
+        
+        input {
+            background-color: black;
+            color: rgb(221, 206, 206);
+            font-weight: 700;
+        }
+        /* Title styles */
+        
+        #title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        /* Form styles */
+        
+        .form {
+            margin-bottom: 20px;
+        }
+        /* Label styles */
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        /* Input styles */
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+        /* Button styles */
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 600px) {
+            #title {
+                font-size: 1.4em;
+            }
+            body {
+                padding: 0;
+                height: auto;
+                text-align: center;
+                margin: 0;
+            }
+            .container {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+        
+        @media (min-width:840px) {
+            body {
+                padding: 10vh 5px;
+            }
+            p,
+            label {
+                font-size: 1.8vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">REGISTRATION FORM</h1>
+        </header>
+        <form id="registration-form" method="post" action="/register">
+            <div class="form">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label id="email-label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label id="password-label" for="password">Password</label>
+                <input type="password" id="password" minlength="8" name="password" placeholder="Enter Password" required>
+            </div>
+            <button type="submit" id="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

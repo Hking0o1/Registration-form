@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTRATION Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            padding: 45px;
+            text-shadow: 2px 2px 5px blue;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        }
+        
+        .text-center {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        /* Container styles */
+        
+        .container {
+            background-color: rgb(235, 45, 3);
+            max-width: 800px;
+            max-width: 800px;
+            height: 40vh;
+            margin: 0 auto;
+            padding: 20px;
+            color: antiquewhite;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s ease;
+            transform: translateY(0);
+            opacity: 1;
+        }
+        /* Header styles */
+        
+        .black {
+            color: black;
+        }
+        
+        .header {
+            text-align: center;
+            margin-top: 10%;
+        }
+        /* Title styles */
+        
+        #title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        #subtitle {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        #description {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        /* Responsive styles */
+        
+        @media (max-width: 600px) {
+            #title {
+                font-size: 2em;
+            }
+        }
+        
+        @media (min-width:840px) {
+            body {
+                padding: 15vw;
+            }
+            p {
+                font-size: 1.8vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">REGISTRATION ERROR</h1>
+        </header>
+        <p class="text-center" id="subtitle"> There is an <span class="black">ERROR</span> in submiting the form</p>
+        <p class="text-center" id="description">Please ensure all required fields are filled correctly and <span class="black">try again</span>.</p>
+
+    </div>
+</body>
+
+</html>
